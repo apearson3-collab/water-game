@@ -1,1 +1,46 @@
+#gameOverText {
+  display: none;
+}
 
+#buttons {
+  display: inline-grid;
+  grid-template-columns: 200px;
+  row-gap: 10px;
+}
+
+#stats {
+  display: inline-grid;
+  grid-template-columns: 200px;
+  row-gap: 10px
+}
+
+#gameArea {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  max-width: 500px;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 8px auto;
+  position: relative;
+  display: block;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #0071c5;
+  border-radius: 10px;
+  opacity: 100%;
+  transition: width 1s linear, opacity 0.5s linear 1s;
+  display: block;
+}

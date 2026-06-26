@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water collection Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>water collecter</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Water collection Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>water collecter</h1>
+        <div id = "gameArea">
+            <span id = "buttons">
+                <button id="collectWater">collect water
+                    <span class="progress-container">
+                        <span id="waterBar" class="progress-bar"></span>
+                    </span>
+                </button>
+                <button id="goToWork">go to work
+                    <span class="progress-container">
+                        <span id="workBar" class="progress-bar"></span>
+                    </span>
+                </button>
+            </span>
+            <span id = "stats">
+                <p id="playerWater">Water: 30/200</p>
+                <p id="playerMoney">Money: 0</p>
+            </span>
+        </div>
+        <p id="gameOverText">Game Over</p>
+        <script src="script.js"></script>
+    </body>
+</html>
